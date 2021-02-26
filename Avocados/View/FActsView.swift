@@ -1,5 +1,5 @@
 //
-//  FActsView.swift
+//  FactsView.swift
 //  Avocados
 //
 //  Created by Marcos Barbosa on 23/02/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FActsView: View {
+struct FactsView: View {
     
     // MARK: - Properties
     
