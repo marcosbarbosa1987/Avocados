@@ -18,7 +18,7 @@ struct AppView: View {
                     Text("Avocados")
                 }
             
-            RecipesView()
+            RecipesView(headers: headersData, facts: factData)
                 .tabItem {
                     Image("tabicon-book")
                     Text("Recipes")

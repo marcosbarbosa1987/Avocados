@@ -23,7 +23,9 @@
 		CD55BA2525E48478003C9B35 /* CenterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BA2425E48478003C9B35 /* CenterItemView.swift */; };
 		CD55BA2825E4891C003C9B35 /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BA2725E4891C003C9B35 /* IconModel.swift */; };
 		CD55BA2B25E4897A003C9B35 /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BA2A25E4897A003C9B35 /* IconData.swift */; };
-		CD55BA2E25E5D921003C9B35 /* FActsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BA2D25E5D921003C9B35 /* FActsView.swift */; };
+		CD55BA2E25E5D921003C9B35 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BA2D25E5D921003C9B35 /* FactsView.swift */; };
+		CD8A81FA25F1AC8800A01442 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A81F925F1AC8800A01442 /* FactModel.swift */; };
+		CD8A81FD25F1ACC800A01442 /* FactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A81FC25F1ACC800A01442 /* FactData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,9 @@
 		CD55BA2425E48478003C9B35 /* CenterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterItemView.swift; sourceTree = "<group>"; };
 		CD55BA2725E4891C003C9B35 /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconModel.swift; sourceTree = "<group>"; };
 		CD55BA2A25E4897A003C9B35 /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
-		CD55BA2D25E5D921003C9B35 /* FActsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FActsView.swift; sourceTree = "<group>"; };
+		CD55BA2D25E5D921003C9B35 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
+		CD8A81F925F1AC8800A01442 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		CD8A81FC25F1ACC800A01442 /* FactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				CD55BA1E25E476FD003C9B35 /* HeaderData.swift */,
 				CD55BA2A25E4897A003C9B35 /* IconData.swift */,
+				CD8A81FC25F1ACC800A01442 /* FactData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				CD55BA1B25E476AC003C9B35 /* HeaderModel.swift */,
 				CD55BA2725E4891C003C9B35 /* IconModel.swift */,
+				CD8A81F925F1AC8800A01442 /* FactModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,7 +133,7 @@
 				CD14ADCC25E450DF00900A8F /* HeaderView.swift */,
 				CD55BA2125E47D17003C9B35 /* CenterView.swift */,
 				CD55BA2425E48478003C9B35 /* CenterItemView.swift */,
-				CD55BA2D25E5D921003C9B35 /* FActsView.swift */,
+				CD55BA2D25E5D921003C9B35 /* FactsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD55BA2525E48478003C9B35 /* CenterItemView.swift in Sources */,
+				CD8A81FD25F1ACC800A01442 /* FactData.swift in Sources */,
 				CD14ADC325E33A5000900A8F /* SettingsView.swift in Sources */,
 				CD55BA2225E47D17003C9B35 /* CenterView.swift in Sources */,
+				CD8A81FA25F1AC8800A01442 /* FactModel.swift in Sources */,
 				CD14ADC625E33A7100900A8F /* AppView.swift in Sources */,
 				CD14ADC025E33A3800900A8F /* RipeningStagesView.swift in Sources */,
 				CD14ADA425E3178700900A8F /* AvocadosApp.swift in Sources */,
@@ -214,7 +222,7 @@
 				CD55BA2825E4891C003C9B35 /* IconModel.swift in Sources */,
 				CD55BA1C25E476AC003C9B35 /* HeaderModel.swift in Sources */,
 				CD55BA1F25E476FD003C9B35 /* HeaderData.swift in Sources */,
-				CD55BA2E25E5D921003C9B35 /* FActsView.swift in Sources */,
+				CD55BA2E25E5D921003C9B35 /* FactsView.swift in Sources */,
 				CD14ADCD25E450DF00900A8F /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

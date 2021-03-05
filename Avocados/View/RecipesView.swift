@@ -11,6 +11,9 @@ struct RecipesView: View {
     
     // MARK: - Properties
     
+    var headers: [Header]
+    var facts: [Fact]
+    
     // MARK: - Body
     
     var body: some View {
@@ -23,14 +26,42 @@ struct RecipesView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
-                        ForEach(headersData) { header in
+                        ForEach(headers) { header in
                             HeaderView(header: header)
                         }//: Loop
                     }//: HStack
                 }//: ScrollView
                 
+                // MARK: - Dishes
+                
+                Text("Avocado Dishes")
+                    .font(.system(.title, design: .serif))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("ColorGreenAdaptive"))
+                    .padding(8)
+                
                 CenterView()
                     .frame(maxWidth: 640)
+                
+                // MARK: - Avocado Facts
+                
+                Text("Avocado Facts")
+                    .font(.system(.title, design: .serif))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("ColorGreenAdaptive"))
+                    .padding(8)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 60, content: {
+                        ForEach(facts) { fact in
+                            FactsView(fact: fact)
+                        }
+                    })
+                    .padding(.vertical)
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                }
+                
                 
                 // MARK: - Footer
                 
@@ -61,6 +92,6 @@ struct RecipesView: View {
 
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView()
+        RecipesView(headers: headersData, facts: factData)
     }
 }
