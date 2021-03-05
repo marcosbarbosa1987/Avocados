@@ -75,7 +75,7 @@ struct RecipeCardView: View {
         }
         .background(Color.white)
         .cornerRadius(12)
-        .shadow(color: Color("ColoBlackTransparentLight"), radius: 8, x: 0, y: 0)
+        .shadow(color: Color("ColorBlackTransparentLight"), radius: 8, x: 0, y: 0)
         .onTapGesture {
             self.feedback.impactOccurred()
             self.showModel = true

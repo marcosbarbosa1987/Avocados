@@ -32,6 +32,7 @@
 		CD8A820A25F1BE5000A01442 /* RecipeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A820925F1BE5000A01442 /* RecipeRatingView.swift */; };
 		CD8A820D25F1BEE400A01442 /* RecipeCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A820C25F1BEE400A01442 /* RecipeCookingView.swift */; };
 		CD8A821025F1BF5C00A01442 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A820F25F1BF5C00A01442 /* RecipeDetailView.swift */; };
+		CD8A821325F1CA8A00A01442 /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A821225F1CA8A00A01442 /* RipeningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		CD8A820925F1BE5000A01442 /* RecipeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRatingView.swift; sourceTree = "<group>"; };
 		CD8A820C25F1BEE400A01442 /* RecipeCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCookingView.swift; sourceTree = "<group>"; };
 		CD8A820F25F1BF5C00A01442 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		CD8A821225F1CA8A00A01442 /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				CD8A820925F1BE5000A01442 /* RecipeRatingView.swift */,
 				CD8A820C25F1BEE400A01442 /* RecipeCookingView.swift */,
 				CD8A820F25F1BF5C00A01442 /* RecipeDetailView.swift */,
+				CD8A821225F1CA8A00A01442 /* RipeningView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				CD55BA1F25E476FD003C9B35 /* HeaderData.swift in Sources */,
 				CD8A820425F1B41500A01442 /* RecipeData.swift in Sources */,
 				CD8A820D25F1BEE400A01442 /* RecipeCookingView.swift in Sources */,
+				CD8A821325F1CA8A00A01442 /* RipeningView.swift in Sources */,
 				CD55BA2E25E5D921003C9B35 /* FactsView.swift in Sources */,
 				CD14ADCD25E450DF00900A8F /* HeaderView.swift in Sources */,
 				CD8A820725F1B4EC00A01442 /* RecipeCardView.swift in Sources */,
