@@ -11,8 +11,9 @@ struct RecipesView: View {
     
     // MARK: - Properties
     
-    var headers: [Header]
-    var facts: [Fact]
+    var headers: [Header] = headersData
+    var facts: [Fact] = factData
+    var recipes: [Recipe] = recipesData
     
     // MARK: - Body
     
@@ -62,6 +63,21 @@ struct RecipesView: View {
                     .padding(.trailing, 20)
                 }
                 
+                // MARK: - Recipes Cards
+                
+                Text("Avocado Recipes")
+                    .font(.system(.title, design: .serif))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("ColorGreenAdaptive"))
+                    .padding(8)
+                
+                VStack(alignment: .center, spacing: 12) {
+                    ForEach(recipes) { recipe in
+                        RecipeCardView(recipe: recipe)
+                    }
+                }
+                .frame(maxWidth: 640)
+                .padding(.horizontal)
                 
                 // MARK: - Footer
                 
@@ -92,6 +108,6 @@ struct RecipesView: View {
 
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView(headers: headersData, facts: factData)
+        RecipesView(headers: headersData, facts: factData, recipes: recipesData)
     }
 }
