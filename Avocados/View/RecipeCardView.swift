@@ -12,6 +12,8 @@ struct RecipeCardView: View {
     // MARK: - Properteis
     
     var recipe: Recipe
+    var feedback: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+    @State private var showModel: Bool = false
     
     // MARK: - Body
     
@@ -58,32 +60,11 @@ struct RecipeCardView: View {
                 
                 // Rates
                 
-                HStack(alignment: .center, spacing: 5) {
-                    ForEach(1...(recipe.rating), id:\.self) { _ in
-                        Image(systemName: "star.fill")
-                            .font(.body)
-                            .foregroundColor(Color.yellow)
-                    }
-                }
+                RecipeRatingView(recipe: recipe)
                 
                 // Cooking
                 
-                HStack(alignment: .center, spacing: 12) {
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
-                }
+                RecipeCookingView(recipe: recipe)
                 .font(.footnote)
                 .foregroundColor(.gray)
                 
@@ -95,6 +76,13 @@ struct RecipeCardView: View {
         .background(Color.white)
         .cornerRadius(12)
         .shadow(color: Color("ColoBlackTransparentLight"), radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            self.feedback.impactOccurred()
+            self.showModel = true
+        }
+        .sheet(isPresented: self.$showModel, content: {
+            RecipeDetailView(recipe: self.recipe)
+        })
     }
 }
 
