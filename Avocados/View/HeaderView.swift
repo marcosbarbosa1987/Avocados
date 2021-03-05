@@ -12,6 +12,7 @@ struct HeaderView: View {
     // MARK: - Properties
     
     let header: Header
+    
     @State private var showHeadline: Bool = false
     
     var slideInAnimation: Animation {

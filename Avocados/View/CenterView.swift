@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct CenterView: View {
+    
+    // MARK: - Properties
+    
+    // MARK: - Body
+    
     var body: some View {
         
         HStack(alignment: .center, spacing: 12, content: {
@@ -53,6 +58,8 @@ struct CenterView: View {
         
     }
 }
+
+// MARK: - Preview
 
 struct CenterView_Previews: PreviewProvider {
     static var previews: some View {

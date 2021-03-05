@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AppView: View {
+    
+    // MARK: - Body
+    
     var body: some View {
         
         TabView {
@@ -40,6 +43,8 @@ struct AppView: View {
         .accentColor(Color.primary)
     }
 }
+
+// MARK: - Preview
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
